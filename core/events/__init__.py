@@ -1,9 +1,10 @@
-#from .ActionGreeting import ActionGreeting
+from .ActionGreeting import ActionGreeting
 from .ActionRussia import ActionRussia
 from .ActionPhoto import ActionPhoto
 from .ActionLocation import ActionLocation
 from .ActionVideo import ActionVideo
-from .ActionAnswer import ActionAnswer
+from .ActionCar import ActionCar
+
 
 __all__ = [
     'ActionGreeting',
@@ -11,5 +12,5 @@ __all__ = [
     'ActionPhoto',
     'ActionLocation',
     'ActionVideo',
-    'ActionAnswer'
+    'ActionCar'
 ]

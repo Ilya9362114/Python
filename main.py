@@ -23,9 +23,9 @@ if __name__ == '__main__':
     t = Pythogram(token=os.environ.get('telegram_token'))
     t.webhook.set(Webhook(url=os.environ.get('telegram_webhook_url')+'/telega'))
     events.subscribe(ActionRussia(sender=t))
-    events.subscribe(ActionAnswer(sender=t))
     events.subscribe(ActionPhoto(sender=t))
     events.subscribe(ActionLocation(sender=t))
     events.subscribe(ActionVideo(sender=t))
+    events.subscribe(ActionCar(sender=t))
     app.run(host='0.0.0.0')
 
